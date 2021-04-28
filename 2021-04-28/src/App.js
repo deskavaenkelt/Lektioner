@@ -1,8 +1,10 @@
 import './App.css';
 // import Card from "./components/Card";
 import CardList from "./components/CardList";
+import { robots } from "./global/robots";
+import SearchBox from "./components/SearchBox";
 
-function App({ robots }) {
+function App() {
     return (
         // step1()
         // step2(robots)
@@ -11,6 +13,20 @@ function App({ robots }) {
 }
 
 export default App;
+
+
+
+function step3(robots) {
+    return (
+        <div className="tc">
+            <h1 className="robofriends-logo">Robofriends</h1>
+            <SearchBox />
+            <CardList robots={ robots }/>
+        </div>
+    )
+}
+
+
 
 // function step1() {
 //     return (
@@ -31,9 +47,3 @@ export default App;
 //         </>
 //     )
 // }
-
-function step3(robots) {
-    return (
-        <CardList robots={ robots }/>
-    )
-}

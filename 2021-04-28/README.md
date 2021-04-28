@@ -62,7 +62,12 @@ git push -u origin main
         - Tog innehållet från const cardArray och lade in det direkt i return funktionen.
         - Lade till en `key` för att ha index i domen på våra Card-komponenter
         - Vi kommenterade bort kod som inte används
-   
+
+10. Få till rätt font på vår h1-tagg (SEGA)
+
+11. Lade in "linear-gradient()" på bakgrunden i body
+
+12. Vi skapar en sökruta och stylar den men skapar inte funktionaliteten för den.
 
 ## Förbättringar
 
