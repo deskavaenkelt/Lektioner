@@ -48,7 +48,7 @@ git push -u origin main
    - `npm start`
    - importera Tachyons i `index.js`
 
-
+7. Testa hur Tachyons fungerar lite lätt innan lunch.
 
 
 ## Förbättringar
