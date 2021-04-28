@@ -1,5 +1,6 @@
 # Dagens lektion 2021-04-28
 
+## Arbetsflöde
 
 1. Började med att skapa en arbetsmapp Windows `C:\Git\Lektioner` eller MacOS `~Git\Lektioner`
 
@@ -14,12 +15,68 @@ npm start
 
 4. Rensade och tog bort filer som vi inte behöver samt tog bort referenser till de filerna i `Index.js` samt `App.js`.
 
+5. Gör Lektioner mappen till ett git projekt.
+
+    - Vi skapar ett repo på GitHub som heter "Lektioner" vi följer sedan instruktionerna där för att initiera och ladda upp repot.
+    - Initialt så initierades repot i dagens datum foldern, så vi fick visa dolda filer och radera `.git`-mappen.
+    - Sedan gjordes allt om igen men i rätt mapp.
+    
+```shell
+echo "# Lektioner" >> README.md
+git init
+git add .
+
+# ta bort filer som inte skulle komma med
+git rm --cached .idea/.gitignore
+git rm --cached .idea/Lektioner.iml
+git rm --cached .idea/modules.xml
+git rm --cached .idea/vcs.xml
+echo ".idea/" >> .gitignore
+git add .gitignore
+
+git status
+git commit -m "first commit"
+
+git branch -M main
+git remote add origin git@github.com:deskavaenkelt/Lektioner.git
+git push -u origin main
+```
 
 
 
+## Förbättringar
+
+### Alternativt steg 1-5
+
+1. Skapa git repo med GitHub Desktop och publicera
+
+![bild 1](../img/1.png)
+
+![bild 2](../img/2.png)
+
+![bild 3](../img/3.png)
+
+2. Skapade React projekt med dagens datum som folder namn `npx create-react-app 2021-04-28`
+
+3. Gick in i react projektet och startade det för att verifiera att det fungerar.
+
+```shell
+cd  2021-04-28
+npm start
+```
+
+4. Rensade och tog bort filer som vi inte behöver samt tog bort referenser till de filerna i `Index.js` samt `App.js`.
+
+5. Commit och Push to origin
 
 
+## Reflektion
 
+Vi fick problem med versionshanteringen i git då `create-rect-app` också skapade ett git repo. Detta upptäcktes efter att vi skulle koppla vårt projekt till GitHub.
+
+Lösningen blev att radera `.git`-mappen i react projektet så att lektionsmappen kunde sköta versionshanteringen.
+
+En lösning hade kunnat vara lösningen under förbättringar eller att skapa ett nytt React projekt och koppla det till ett repo på GitHub.
 
 
 # Getting Started with Create React App
