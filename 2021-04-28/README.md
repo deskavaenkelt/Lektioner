@@ -50,6 +50,15 @@ git push -u origin main
 
 7. Testa hur Tachyons fungerar lite lätt innan lunch.
 
+8. Vi skapar en "Card-komponent" som vi ska kunna återanvända.
+   - Den innehåller en bild, h1-tagg samt p-tag
+   - Refactor våran kod (slimma ner den)
+
+
+
+
+
+
 
 ## Förbättringar
 
