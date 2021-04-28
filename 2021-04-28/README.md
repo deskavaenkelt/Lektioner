@@ -42,6 +42,13 @@ git remote add origin git@github.com:deskavaenkelt/Lektioner.git
 git push -u origin main
 ```
 
+6. Installera ett CSS ramverk i detta fallet [Tachyons](https://tachyons.io/)
+   - Ctrl-c för att avsluta utvecklingsservern
+   - `npm install tachyons@4.12.0`
+   - `npm start`
+   - importera Tachyons i `index.js`
+
+
 
 
 ## Förbättringar
